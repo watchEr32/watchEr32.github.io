@@ -1,0 +1,178 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>世界设定和背景故事 | 霍利德埃伊</title><meta name="author" content="Watcher"><meta name="copyright" content="Watcher"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="第零回共同设定的内容，可能会有些微变动或修正">
+<meta property="og:type" content="article">
+<meta property="og:title" content="世界设定和背景故事">
+<meta property="og:url" content="http://example.com/2024/11/06/%E4%B8%96%E7%95%8C%E8%AE%BE%E5%AE%9A%E5%92%8C%E8%83%8C%E6%99%AF%E6%95%85%E4%BA%8B/index.html">
+<meta property="og:site_name" content="霍利德埃伊">
+<meta property="og:description" content="第零回共同设定的内容，可能会有些微变动或修正">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/eye.png">
+<meta property="article:published_time" content="2024-11-06T03:25:08.000Z">
+<meta property="article:modified_time" content="2024-11-06T03:44:53.834Z">
+<meta property="article:author" content="Watcher">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/eye.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2024/11/06/%E4%B8%96%E7%95%8C%E8%AE%BE%E5%AE%9A%E5%92%8C%E8%83%8C%E6%99%AF%E6%95%85%E4%BA%8B/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '世界设定和背景故事',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-11-06 11:44:53',
+  isShuoshuo: false
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(/img/background.png);"></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/map.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">霍利德埃伊</span></a><a class="nav-page-title" href="/"><span class="site-name">世界设定和背景故事</span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">世界设定和背景故事</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-11-06T03:25:08.000Z" title="发表于 2024-11-06 11:25:08">2024-11-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-11-06T03:44:53.834Z" title="更新于 2024-11-06 11:44:53">2024-11-06</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="世界基本设定"><a href="#世界基本设定" class="headerlink" title="世界基本设定"></a>世界基本设定</h1><p>就那种日式奇幻世界的通用背景设定，嗯<br>魔法与科技就像一枚硬币的正反面，在世界各地分别发展，形成了今天的格局<br>各个国家之间有冲突也有合作，但魔物应该是他们都要面对的问题</p>
+<h1 id="国家和地区"><a href="#国家和地区" class="headerlink" title="国家和地区"></a>国家和地区</h1><h2 id="尼海伦"><a href="#尼海伦" class="headerlink" title="尼海伦"></a>尼海伦</h2><p>说起尼海伦，大家总是想不起关于它的什么东西。它几乎没有存在感，虽然坐拥一座岛屿，可它没有坎帕斯那样丰厚的魔力与自然资源，大部分产业表现出衰颓，政治上也充满无聊至极的贵族专职与腐败。人民得过且过，贵族大腹便便、无所作为。<br>然而就是这样无话可谈的国家，在每次的讨伐队中却要派出最重要的勇者剑士。事实上他们的武力发展得相当一般，况且这个勇者席位大多用来给贵族从军子弟镀金，慢慢地周边的国家都开始暗中传播尼海伦勇者半吊子的恶名。勇者连带着国家，都是一副半吊子的样子，比起繁荣进步的坎帕斯，简直就像它卑微的影子。<br>半吊子国家的魔法也很半吊子，学院里的教授最擅长的不是咒语，而是研究“一种基于中心发热法则的火球”之类毫无作为的法术。平民也几乎没机会学习法术，学院学生的席位大多是给混得不光彩，也不擅长跟人打交道的贵族后代。<br>半吊子国家勤勤恳恳为世界产出粮食，本就不甚发达的魔科技已有被坎帕斯甚至西南科技国家入侵的趋势。只怕这样下去百年之后尼海伦这个名字都要在世界地图上消失了吧，真令人唏嘘不已。<br>古时候魔族的入侵、北方的寒潮、贫瘠的资源……这个国家的过去和未来似乎都一片狼藉，比起日新月异发展的世界，外人置身其中总有不真实的感觉。尼海伦的金银铜铁矿藏只到够用水平，更遑论珍稀的秘银、精金乃至于多种多样的魔法矿物。之前的岁月里南方的魔王城不断派出魔物侵扰海岸，北方是无人居住的极寒之地，海上贸易这条道路无疑也走不通。唯一值得庆幸的是还算广袤的平原，但这也把这国家数千年的历史牢牢拴在耕地与牧场上。<br>半吊子国家勤勤恳恳为世界产出粮食，本就不甚发达的魔科技已有被坎帕斯甚至西南科技国家入侵的趋势。只怕这样下去百年之后尼海伦这个名字都要在世界地图上消失了吧，真令人唏嘘不已。</p>
+<p>由于南方魔族常年的渡海入侵，尼海伦的军事不得不变得稍微成熟一些，这也是它不怎么需要冒险者们的原因。围绕简单易学的军用标准化魔法，尼海伦有成熟的对魔物军事体系，可他们更擅长防守，毕竟他们也无心扩大城邦，因此遭受更多角度的魔物威胁。军队的魔法师比起学院的蛀虫似乎更能创造一些实际价值，但他们缺乏创造力，也不愿花心思思考命令之外的东西。</p>
+<p>  它的基层冒险者公会、工匠公会等组织与坎迪斯无二，倒不如说是在后者推动下逐渐建立的，只不过规模和覆盖率缩水了一大圈，仍然是实在的半吊子。军队接管对外作战，魔法和武术教育不完备，使人们缺乏应对怪物的基本条件，况且民众更热衷于安稳的农活，无怪乎这个国家的冒险者数量远少于世界上其他地区，他们中的大部分还是孤儿或家破人亡之人。“当冒险者还不如去做苦力”，有如此谚语的国家冒险者的地位可想而知。<br>  自近代以来由于魔王城式微，尼海伦终于打通南方的航道，并有了些像样的港口。海上贸易总算是在艰难中发展，然而掌权者耶伦家族固守农耕文明的管理方式，又阻碍着港口贸易扩大规模。</p>
+<p>  这个国家只有一件称得上伟大的遗产，它是勇者之剑艾克斯塞塔鲁（Excitare），在古代通用语中是“觉醒”的意思。它平时以普通剑的姿态现身，你也许会觉得它碰到邪恶会发光变锋利，然而事实上，它一直保持这个样子。它只是一把初代勇者讨伐初代魔王用的剑，虽然我们不知道他怎么得到的它。尽管那位勇者曾说过这把剑会在命运汇聚之时绽放真正的光芒，然而从来没人见过它展露力量。它如今已经只是一件礼器，在魔王讨伐时象征性地带上，当然那些贵族勇者在战斗中用的永远是王都最好铁匠的作品——虽然，坎迪斯制造的好剑无疑锋利上好几倍。<br>  半吊子勇者拿起它时，也并没有特别的感觉。他原本以为自己日复一日的训练会被认可，事实证明他似乎想多了。然而这次冒险国王却连着御旨把它交到了半吊子勇者的手里。他不得不带着它踏上旅程。</p>
+<h2 id="坎迪斯"><a href="#坎迪斯" class="headerlink" title="坎迪斯"></a>坎迪斯</h2><p>居民信仰<br>在坎迪斯，居民们普遍不相信神的存在，他们坚信力量才是一切。无论是肉体的力量，还是魔法的力量，都被视为至高无上的存在。这种信仰使得坎迪斯的居民们更加注重自我修炼和提升，以期在力量上达到更高的境界。<br>魔法与力量<br>在坎迪斯，每个居民都拥有魔力量，但魔法的使用并非与生俱来，而是需要通过学习和实践来掌握。因此，城邦内设有专门的魔法学院和训练机构，为居民们提供学习和提升魔法的机会。这些机构不仅教授魔法的理论知识，还注重实践应用，让居民们能够在冒险和生活中灵活运用魔法。<br>行业与职业<br>冒险家协会<br>坎迪斯有一个著名的冒险家协会，吸引了来自各地的冒险家加入。这些冒险家们组成团队，探索未知的领域，寻找珍贵的宝藏和神秘的魔法物品。他们的勇敢和智慧成为了坎迪斯的一道亮丽风景线。<br>猎人公会<br>除了冒险家外，坎迪斯还有一支强大的猎人公会。这些猎人专门负责捕猎魔物，保护城邦的安全。他们精通各种武器和狩猎技巧，是坎迪斯不可或缺的力量。<br>其他行业<br>工匠与制造：坎迪斯的工匠们擅长制作各种魔法装备和武器，他们的作品不仅美观实用，还蕴含着强大的魔法力量。<br>学者与研究：城邦内有一批专注于魔法研究的学者，他们不断探索魔法的奥秘，为坎迪斯的魔法发展贡献力量。<br>商业与贸易：坎迪斯的商业繁荣，各种魔法物品和珍稀材料在这里交易频繁，为城邦的经济带来了繁荣。<br>魔物与习俗<br>魔物<br>坎迪斯周边分布着各种魔物，它们或凶猛或狡猾，给城邦的居民们带来了不小的挑战。居民们通过狩猎和冒险来获取魔物的材料和魔法力量，同时也锻炼了自己的勇气和智慧。<br>习俗<br>力量庆典：每年一度，坎迪斯会举行盛大的力量庆典，居民们会展示自己的魔法和武艺，争夺“力量之王”的称号。<br>冒险节：为了鼓励冒险精神，坎迪斯还设有冒险节，冒险家们会分享自己的冒险经历，激励更多的人加入冒险的行列。<br>魔法交流日：每隔一段时间，坎迪斯会举办魔法交流日，居民们可以互相学习魔法技巧，共同探讨魔法的奥秘。<br>居民细节<br>着装风格：坎迪斯的居民们注重着装的实用性和美观性，他们的服装往往融合了维多利亚时代的优雅与魔法世界的神秘。<br>性格特点：由于长期面对魔物和冒险的挑战，坎迪斯的居民们普遍勇敢、坚韧不拔，同时也富有同情心和团结精神。<br>生活方式：居民们的生活节奏紧凑而充实，他们既注重个人的修炼和提升，也享受与家人和朋友的相聚时光。<br>这就是坎迪斯，一个充满力量、魔法和冒险的维多利亚时代城邦。希望这个设定能够满足你的要求！</p>
+<h2 id="伊里克斯"><a href="#伊里克斯" class="headerlink" title="伊里克斯"></a>伊里克斯</h2><p>信仰的是一棵叫作阿亚塔的巨树。只有阿亚塔和少数统治者有魔法，所以国家主体还是以发展科技为主，以医疗科技方面最为出众。议会制，有领头的一个家族，也有反对这个家族的地下政党。<br>伊里克斯对居民推行通识教育，但与魔法有关的内容必须经过重重考核才能学习。农业能做到自给自足。<br>国家存在阶级分化，下层居民对魔法相关的外来人持冷漠甚至排斥的态度，上层群众则会欢迎外来的魔法或医疗研究者。<br>伊里克斯对入境人员有严格的审查系统。会根据身份开放不同的权限。<br>每个地区都有侍奉阿亚塔的教堂。居民相信生命会受阿亚塔庇护，死后能成为阿亚塔的养分。每年春季有赞美生命的祭典，阿亚塔会现身降下祝福。祭典期间会发展旅游业。<br>在郊区出现畸形生物也很正常，说不定是哪个研究者又搞出了基因突变。</p>
+<h2 id="凡多姆海尔王国"><a href="#凡多姆海尔王国" class="headerlink" title="凡多姆海尔王国"></a>凡多姆海尔王国</h2><p>1地理位置：位于伊里克斯的邻近大陆，两国之间存在一条海峡。地形多样，拥有丰富的矿产资源。<br>2.政治体制：实行君主立宪制，国家最高权力掌握在女王手中，但实际上由议会和首相共同治理国家。<br>3.信仰与文化：以魔法为核心，拥有丰富的魔法资源和传承。国民普遍信仰魔法，认为魔法是沟通自然和神灵的桥梁。魔法师享有极高的地位，魔法学院是国家最重要的教育机构<br>经济体系是一个结合了传统魔法与现代商业的独特体系<br>1魔法产业：<br>   魔法物品制造：魔法师们创造各种魔法物品，如魔法药剂、魔法武器、护身符和魔法饰品，这些物品在国内外市场都有很高的需求。<br>   魔法教育：魔法学院和私人魔法学校是重要经济支柱，吸引了国内外许多有志于学习魔法的学生。<br>2资源开发：<br>   魔法材料采集：拥有丰富的魔法资源，如稀有的草药、矿石和魔法晶体，这些资源的采集和出口为国家带来了丰厚的收入。<br>   农业和畜牧业：虽然魔法在农业中发挥着重要作用，如使用魔法促进作物生长，但传统农业和畜牧业仍然是经济的重要组成部分。<br>3旅游业：<br>   魔法景观旅游：自然景观和魔法遗迹吸引了大量游客，旅游业成为国家经济的重要来源。<br>4国际贸易：<br>   魔法物品出口：魔法物品在国际市场上具有竞争力，尤其是对于那些无法自行制造魔法物品的国家。<br>   科技进口：尽管以魔法为主，但国家仍需从伊里克斯进口一些高科技产品，尤其是与魔法研究相关的科技设备。</p>
+<h2 id="雷卢卡利亚"><a href="#雷卢卡利亚" class="headerlink" title="雷卢卡利亚"></a>雷卢卡利亚</h2><p>位于中央大陆的神秘独立城邦，建立时间和缘由已不可考。以其对魔法本源的深入研究和对于星象的观测与解读闻名，但相当排外，只允许那些“有天赋”之人进入，并且会极力劝阻他们留下。<br>其最高层被尊为“观星者”，考虑更替一般有三到五人，他们集体决定雷卢卡利亚的重要事务，并接受众人的尊重。<br>雷卢卡利亚闻名的另一个原因是其特产的广距传信水晶，传输距离横跨半张世界地图，各国都曾派出代表希望促成这项技术的“共享”，但均无功而返。<br>不过，根据记载，雷卢卡利亚曾在数百年前主动联系过各国高层，并赠送出相当数量的传讯水晶，称“未来会见证我们的决定”。</p>
+<h2 id="格鲁德"><a href="#格鲁德" class="headerlink" title="格鲁德"></a>格鲁德</h2><p>沙漠都市，本来是探索沙漠遗迹的冒险者们组成的临时聚集地，随着时间的推移逐渐形成城镇和自己独特的文化</p>
+<h2 id="夏尔"><a href="#夏尔" class="headerlink" title="夏尔"></a>夏尔</h2><p>位于绝妙的地理位置的小村庄，经过许多年也没有人打扰，人们都认为和平且美好的世界才是常态</p>
+<h2 id="魔王城"><a href="#魔王城" class="headerlink" title="魔王城"></a>魔王城</h2><p>与周边国家有各种险恶地形隔绝，剧毒沼泽、高寒山脉阻止着任何想要带大规模军队讨伐的家伙。然而魔族得益于体质却可以通过这些地形，因此给坎迪斯带来了不少麻烦。有翼的暗黑飞龙等生物甚至可以进犯北方的尼海伦，并至少阻碍了这弱小国家近百年的历史发展进程。<br>然而随着近代对魔法技术的开发，不断在封印中复活的魔王对人类而言已不再是威胁了。此前一直承担封印魔王任务的尼海伦，暗中停止了与完全消灭魔王的仪式与咒语的研究，故意在每次战斗后给魔王加上选定的不稳固的封印。其他国家看破并不说破，毕竟魔发与魔科学的发展让魔法使翻越那些危险地形变得不再困难，涌出的魔族中危险的家伙已被消灭殆尽，魔界传送门已被关闭并荒废数百年。所谓的讨伐只是一次又一次折磨耄耋老矣的虚弱魔王罢了。他已几乎没有自我意识，每次在王座上苏醒也无力再唤醒仆从、召集魔物大军，只是粗重地喘息，等待着将来的死亡。</p>
+<h1 id="自然奇观"><a href="#自然奇观" class="headerlink" title="自然奇观"></a>自然奇观</h1><h2 id="大漩涡"><a href="#大漩涡" class="headerlink" title="大漩涡"></a>大漩涡</h2><h2 id="巨树阿亚塔"><a href="#巨树阿亚塔" class="headerlink" title="巨树阿亚塔"></a>巨树阿亚塔</h2><p>阿亚塔是很久以前存活下来的大魔法使，虽然现在已经不能说是人了。祂的身体已经破损的非常严重，布满裂痕而且没有双臂，脊柱几乎是木质。本体及生命力与伊里克斯首都的巨树紧密相连。大部分时间祂都在同样破碎的梦境中沉睡。在每年的祭典祂会醒来，以树叶为媒介将祝福赠予这片土地上的人。祂很温柔。温柔到即使祂的子民将祂吞食殆尽，祂也不会有怨言。</p>
+<h2 id="奥尔汀火山"><a href="#奥尔汀火山" class="headerlink" title="奥尔汀火山"></a>奥尔汀火山</h2><h2 id="雪山"><a href="#雪山" class="headerlink" title="雪山"></a>雪山</h2><h1 id="威胁"><a href="#威胁" class="headerlink" title="威胁"></a>威胁</h1><h2 id="新的黑暗力量？"><a href="#新的黑暗力量？" class="headerlink" title="新的黑暗力量？"></a>新的黑暗力量？</h2><p>随着老魔王被如同玩物一般被封印了多年，新的黑暗力量正在崛起</p>
+<h2 id="预言"><a href="#预言" class="headerlink" title="预言"></a>预言</h2><p>几个月前，魔法都市雷卢卡利亚突然动用紧急通讯手段，向世界各国发出预警。<br>“观星者”们集体表示不久的将来，一重重劫难即将接踵而至，“那时，连那颗亘古不变的明星都将暗淡”。<br>各国对于这则预言的相信程度各有不同，虽然都采取了一定措施来以备万一，不过，随着时间推移，他们或多或少都有些松懈……</p>
+<h1 id="谜团"><a href="#谜团" class="headerlink" title="谜团"></a>谜团</h1><h2 id="龙"><a href="#龙" class="headerlink" title="龙"></a>龙</h2><p>龙，这种强大而美丽的生物，现在仅存在于古老的故事和传说里，虽然偶尔会有人说自己目击到龙在空中翱翔，但大都最终证实是博眼球的谎言。<br>然而，在那些古老的故事里，情况却大不相同，种种记载表明在过去相当长的一段时间里，龙一直处于世界的霸主地位。<br>从龙族主导到人类崛起的记载间存在相当长度的空白，这段历史也被人称为“失落的历史”</p>
+<h2 id="世界起源"><a href="#世界起源" class="headerlink" title="世界起源"></a>世界起源</h2><p>世界是如何形成的？是否有创世神话或者一个强大的力量创造了世界？</p>
+<h2 id="世界的尽头"><a href="#世界的尽头" class="headerlink" title="世界的尽头"></a>世界的尽头</h2><p>没人知道一直沿着地图的某一方向走会发生什么，会回到起点?亦或是从被柱子支撑的大地上坠落….<br>不过，世界的尽头，海怪们正等着冒险者</p>
+<h1 id="历史事件"><a href="#历史事件" class="headerlink" title="历史事件"></a>历史事件</h1><h2 id="魔法启蒙"><a href="#魔法启蒙" class="headerlink" title="魔法启蒙"></a>魔法启蒙</h2><p>魔法启蒙：某个关键的历史时刻，人们首次发现并掌握了魔法力量，这一发现极大地推动了社会的发展。<br>科技与魔法的融合：随着科技的发展，人们开始尝试将魔法与科技相结合，产生了新的学科——魔工学。</p>
+<h2 id="初代魔王的败北"><a href="#初代魔王的败北" class="headerlink" title="初代魔王的败北"></a>初代魔王的败北</h2><p>对初代魔王的讨伐，是人类在与魔族战争中第一次完全胜利的的标志。来自尼海伦的勇者，与来自坎迪斯的星魔法师与来自___的__共同击败了魔王。勇者在战斗中壮烈牺牲，临死前叮嘱队友保管好他的剑，它在命运汇聚时会再度绽放光芒；同时，要紧盯好潜伏在暗中的邪恶。当然，魔王已被消灭，今后的人民勇敢的的战斗使他复活也再难以掀起风浪，伟大的勇者不必再担心邪恶复苏，可以含笑九泉了。</p>
+<h2 id="一段记录"><a href="#一段记录" class="headerlink" title="一段记录"></a>一段记录</h2><p>世界第一位魔王，那斯西奥（Nescio）<br>  “报告：第9810号世界出现扰动。待命管理者请尽快派出一人前去调查，解决可能存在的威胁。”<br>  “我是芬里尔。我觉得我可以。”<br>   “好的芬里尔，请尽快出动。”<br>  “等我带上便携传送门……一个库的魔法仆从够了，装到次元袋里……门禁在哪儿来着……太久没动了……好的我找到了。报告，管理者芬里尔已准备穿越亚空间。”<br>  “报告，管理者芬里尔已抵达9810。这里一片暗红，到处流淌着岩浆，看起来似乎不是什么好地方。”<br>  “这房子真不错，谁也别想轻易来这里。”<br>  “飞龙们出动了，他们状态还行。”<br>  “看看共享的视野……为什么这儿只有魔族？我看到他们的角了……真可怕，这些妖怪还会建村庄和城堡，虽然那些建筑丑得没法看。”<br>  “准备清除。早点做完早点收工。狼军团，独角兽军团，狮鹫军团，出动了！老样子，离开次元口袋，别偷懒了。快进传送门里。”<br>  “不知道为什么，我总有种恍惚与不真实感。总感觉眼前的东西说不出来地奇怪……最近睡眠质量不佳啊。我补个眠吧。”</p>
+<p>   “哈——这觉睡得真舒服。看看仆从们。不，等会儿。效率有点太低了吧，这么久都没攻下几座城？不，等等。有一支看起来就很可怕的队伍在靠近这儿。为首的拿着炼狱剑，后面有个死灵法师，还有暗术士……算了，正好活动活动筋骨。”<br>  “他们要来了。”<br>  “门被踢开了……真粗鲁。奇怪，我的眼前晃了一下。我好像看到我在一个昏暗又点着红色蜡烛的城堡里。如果真是那样就太可怕了。我喜欢亮堂堂的家具，我一辈子也不想睡那种地方。”<br>  “等死吧，你们这群入侵者。”<br>  “完了。他们有两把刷子。”<br>  “我得先把法师们干掉。不，好痛！熔岩射线？”<br>  “咳……咳……不行……”<br>  “再不动用第二形态，我要死在这儿了……”<br>  “哈！你们玩够了吧，该我了。及时清理这世界真是明智的选择。放任这些怪物发展，真不知道会是什么样。”<br>  “只剩你了，拿剑的家伙。真是场酣畅淋漓的战斗。等会儿，你的剑怎么在亮金光？”<br> “好亮！！！！”<br>  “我的眼睛都快瞎了……不，等等，我看到了什么？之前那座该死的城堡……你是谁？！为什么长着一副人类勇者的样子？那把不是炼狱剑吗？！倒下去的是……天哪，他们看上去像魔法使和神官！这到底是怎么回事？！”  “不，你听我解释！！等会儿，我在说什么，为什么我的声音听起来低沉沙哑，像滚动的岩浆？我的手怎么变成了黑色的爪子？！天哪，我有翅膀？！”<br>  “这位……骑士先生！？听我解释啊？！不要砍我………啊………咳咳……呕……心脏……第一次……刺中……”<br>  “他在画………封印……法阵……这样啊……我是不是……还会……再……醒来………”<br>  “报……告……9810……有……危险……操……没信号”<br>  “好……困……”<br>  “等下……那个在角落里……穿着斗篷的……是谁……根本没见过……他……”</p>
+<h1 id="英雄们"><a href="#英雄们" class="headerlink" title="英雄们"></a>英雄们</h1><h2 id="侯爵-艾瑟尔·冯·布拉格"><a href="#侯爵-艾瑟尔·冯·布拉格" class="headerlink" title="侯爵 艾瑟尔·冯·布拉格"></a>侯爵 艾瑟尔·冯·布拉格</h2><p>在那片云雾缭绕的村庄之中，一个名为艾瑟尔·布拉格的男孩出生。他的命运本该如同常人般平淡，延续着家族的农耕生活。然而，他的心却如那北风般不羁，任凭命运如何束缚，也难以遏制他拯救世界的豪情。自他学会持剑起，他的心中便埋下了一颗叛逆的种子，终于在与心理斗争后，他毅然决然地离开了那村庄，奔向了他梦想中的帝都。<br>梦想中的士官学校，如瑰丽的晨曦吸引着他前行的脚步。但学费的高昂，却犹如盘旋的巨龙阻挡着他的梦想之路。于是，他开始了无畏的佣兵生涯。沐浴在战火与硝烟之中，他的剑术日臻化境，如同北境凛风般凌厉。生活虽险峻，但机遇并存，战斗带来的战利品，也给予他追梦的资本。<br>经过千辛万苦，他终于叩开了士官学校的大门，并在贵族子弟编织的阴谋中脱颖而出，成为了真正的勇者。在那战斗中，他与众多各国的精英组成队伍，轻松击败了魔王。然而，这胜利对于艾瑟尔来说，如浮冰轻轻划过水面，未能掀起丝丝涟漪——他感受不到成就的喜悦。<br>在荣光的背后，他窥见了世间的不堪。政治的腐败与贵族的垄断，让他明白即使再临危局，他这样的无名之辈将再难有机会扛起拯救世界的重担。于是，他渐渐放弃了心中的热血，用那象征无上的爵位——由此得名的“冯”字——换来了无拘无束的纵情享乐。<br>岁月行至四十，天地似乎再次听到了他的呼唤。在一个凛风扑面的晚上，邻国的使者带来了求援的讯息。霍利德埃伊此刻正处在水深火热之中，那海伦国王弗里德里希三世被迫派出艾瑟尔，并授予他传说中的圣剑——艾克斯塞塔鲁，将重任委托与他<br>原来，几个月前，雷卢卡利亚向世界各国发出了警告。他深知，在腐朽的政治环境下，国内再无可能诞生出有力拯救世界的英雄。于是，艾瑟尔毅然而然踏上了旅途，寻觅那些值得托付生命的伙伴，他重新拾起了那余灰般的激情，目标只有一个：再一次拯救这个世界…….大概吧</p>
+<h2 id="小叶子-未籽"><a href="#小叶子-未籽" class="headerlink" title="小叶子 未籽"></a>小叶子 未籽</h2><p>未籽，伊里克斯小城中一位如晨露般清新的少女。虽年岁轻浅，却已执掌奇械之艺，心中无垠的好奇犹如溪流般潺潺流淌。她于无垠之梦中，窥见了传说中巨树阿亚塔的恢宏身影，梦醒之时，发现手中多了一片落叶。这片叶子，像是命运之风留下的指引，未籽带上她经过特殊处理而不腐的珙桐叶，迈出了走出故土的第一步。<br>在她的旅途之上，她并没有为某一种情感所束缚。未籽对世事保持着一种均衡的好奇，她的双眼，犹如夜空中璀璨的繁星，不掺杂功利的野心，也未曾被同情或恶意染指，这是她与生俱来的特质。她的身旁，有一位可靠的前辈，同伴一般，亦师亦友，带领着她一路向前。探索者的脚步在坎迪斯城停驻，她短暂地在此落脚，四周的文明与技艺在她眼中如梦幻般展现，而后，她最终遇见了新的探险小队，这段相逢交织着新的章节。<br>未籽虽未将太多事情放在心间，却也不致被卷入波澜之中。在她内心深处，自有一分清明，能够洞察他人的态度，亦存有保护己身的智慧。对她而言，旅途中的每一步都如同奇械运作中的齿轮，承载着无限的可能，不断驱动着她向前。这，是一个少女在奇幻世界中漫游的故事，而她的足迹，必将谱写出新的传说。</p>
+<h2 id="阴影守护者-里昂-九州"><a href="#阴影守护者-里昂-九州" class="headerlink" title="阴影守护者 里昂.九州"></a>阴影守护者 里昂.九州</h2><p>在夜色笼罩的大地上，一个浑然天成的奇迹悄然诞生。她，出身于那融合魔女与凡人的血脉之中，是魔法与寻常命运交错的结晶。她的母亲是一位神秘莫测的魔女，而父亲只是个痛恨魔法的凡人，被魔药所欺骗后，两人关系的破裂，注定了她自幼便生活在萧瑟的家庭之中。然而，命运之火在她六岁时熊熊燃烧，她卓越的魔法天赋伴随着年华曾露初生。<br>她的命运之轮在八岁时开始转动，那时她与一个同龄男孩相遇，他名为普林斯。两颗心灵在无忧无虑的时光中紧紧相依。然而，随着她步入魔法学院，一切开始改变。那混血儿的身份使她遭遇了冰冷的歧视，普林斯却逐渐走远，留下的是日益扩大的隔阂。<br>毕业之后，她全心投入魔法界的Ph。但是，当Ph将手指向普林斯一家，她的内心承受不住友谊将逝的痛苦，转投神秘的d，成为其隐秘的间谍。命运的洪流无情，普林斯终究还是殒命于乱世。她被迫身陷风暴之中，于Ph与d的夹缝间挣扎求存，成为双面间谍，其间无数情报从她手中流出。<br>在最终的决战中，战火无情地吞噬了无数个挚友，历经生死，她最终侥幸存活。在血与泪的洗礼中，她听闻坎迪斯隐匿着复活之秘，仿佛是远古传说的余烬，于是她毅然决定前往。虽无法操控战场上的风暴，她一手出神入化的治疗技艺，却足以让她维持自身的安稳。为了旅途中的安危，她决定找强大的护卫同行。<br>那传说，或许是古代的隐秘，被时光的沙漏稀释成飘渺的传闻。然而，在她的故土，它却仅以片段的面目流传。经过一番潜心研究，当她确认坎迪斯便是那传说的起源，她的心中燃起了新生的希望之火。她，带着渴望与信念，踏上了通往坎迪斯的旅途，一个关于命运与奇迹的传说，将在此上演。</p>
+<h2 id="阿尔法-露西亚·深红囚影"><a href="#阿尔法-露西亚·深红囚影" class="headerlink" title="阿尔法 露西亚·深红囚影"></a>阿尔法 露西亚·深红囚影</h2><p>在本世界的一次战役中，意识体被意外放逐于该世界，降临于一名同她各方面表征都一样的女孩身体里，而她的目的是尽早回到她的世界中去。<br>世界简介：污秽之地，遍地是能够给生物体带来污染的邪秽，占领着此处90％的土地。【康斯塔雷耶】，污秽之地唯一屹立着的蒸汽之城。<br>体系：【康斯塔雷耶】的蒸汽科技与对魔法的研究，使其在污秽之地上建立起一座【铜制】巨城。（【铜】是该地对抗邪秽的一种重要材料）而大多数康斯塔雷耶的人民会在城中心以占星术，魔法，和蒸汽科技结合的产物【潘多拉】，进行筛选，筛选中的人可以通过与【潘多拉】进行意识链接，以意识体的形态前往被捕捉的世界碎片中完成战役从而汲取能力与知识反馈于连接者本身。<br>外交：【康斯塔雷耶】作为防止邪秽外溢的哨塔，会获得来自各地国家的资助，但是这里也并不会有什么人愿意来，所以都是由【康斯塔雷耶】城内组成商队，在接受各国的资助的同时进行通商。<br>【康斯塔雷耶】内部：【康斯塔雷耶】分为上下两层，大部分人都是住在下层的，上层则被称为圣城（蛮小的）作为【康斯塔雷耶】的研究中心，大型会议地点，各骑士团以及大型组织的总部<br>对于阿尔法：原身是【康斯塔雷耶】的原住民，在【潘多拉】进行初次筛选时突发异变，导致原身意识体消散，而阿尔法作为异界的特殊意识体，屏蔽了一些仪器的检测，被研究中心当做完全无用的材料丢弃，并由【抛尸人】运至城外低污染区进行销毁。而阿尔法在途中醒来，被【抛尸人】当做污染物处理，但是却被阿尔法的战斗技巧碾压，拿走了【抛尸人】的太刀和其他装备后，根据自己的环境感知能力离开了这片污秽之地。<br>补充：降临时阿尔法占据的是原身的肉体，而阿尔法的意识体在吸收空气中的特殊物质与邪秽的能量时会将肉身重新改造成阿尔法原本的构造体的结构，但是因为各方面原因，阿尔法无法继续回复自己的实力，只能以理论最低功率进行行动。<br>【康斯塔雷耶】的设定补充：【潘多拉】反馈的力量取决于连接者在世界碎片中任务的完成度；各个世界力量体系有差异，因此城内的力量体系也是千奇百怪，但大致可以分为5个大类；城内以封建时期的城市作为模板；城内组织有五大【骑士团】（以力量体系进行区分），【议会】，【观星台】（神秘学研究中心），【蒸汽之心】（蒸汽科技研究中心），【抛尸人】（将城内已死之人的尸体进行检测后运至城外销毁），【巡卫】（城内管理机关，同时负责处理城内突发的污染事件），以及一些其他次要组织<br>世界设定补充：污秽之地有【低污染区】，【中度污染区】和【重度污染区】，污秽之地以【低污染区】为主，而【康斯塔雷耶】主要负责与【重度污染区】进行对抗，防止【重度污染区】的扩散；【康斯塔雷耶】属于【低污染区】的一部分，但是污染程度相对较低，适合人类的生存繁衍，这也是【康斯塔雷耶】基本不会外扩的原因之一；【康斯塔雷耶】以外也有零星的一些居住点，但是那里的人大多受到了污染，对外来者有较强攻击性，并且通过污染来汲取力量，在岁月的推移中已然发展成一个势力不小的【邪教】</p>
+<h2 id="博命公子-杜荀"><a href="#博命公子-杜荀" class="headerlink" title="博命公子 杜荀"></a>博命公子 杜荀</h2><p>在繁华喧嚣的城邦中，杜荀的命运犹如无根浮萍，随波逐流。他，曾是生活于泥淖中的孩子。在他年仅六岁之时，命运之手将他推向了苦难的深渊。他的父亲嗜赌如命，将杜荀当作赌债交给了黑市，母亲则被迫吞下忧伤的苦果，直至困于无尽绝望中凋谢。<br>在黑市中，他成为商品，被廉价出租给形形色色的家庭为仆，背负着如雨点般的屈辱。然而，命运并非全然无情，某日，一位善良的贵族将其赎出，他才初尝自由的滋味。多年的隐忍和低头，只为一日能血刃冤屈的代价——斩杀那个将自己卖入黑暗的人。然而，他最终才知晓，父亲早已将自己的生命一同输去。杜荀一时迷失了方向，进入了内心荒芜之境。<br>于是，他开始流浪，在这茫茫世界中游荡，直到遇见了一位携岁月痕迹的老者。老者阅尽世态，愿将毕生绝学倾授于他。随着老者的离世，杜荀接受了遗憾与爱所交织的馈赠。那时，他一无所有，却怀抱着技能与希望，踉跄步入了冒险家协会的门槛。<br>杜荀一时冲动，接下了新秀中死亡率极高的A级委托——猎杀传说中的赤龙。然而，命运女神对他的眷顾竟开了个玩笑，赤龙被他激怒，狂乱中误撞山壁，自寻灭亡。这一役，使他一夕成名，被称为“博命公子”，成为世人口中膜拜的传奇。自此，杜荀对命运中的赌注产生了迷恋，他甘于将自己的生命那般不羁地交于运气的波流。<br>他的故事，是一场不断下注的命运赌局，在这条充满未知的旅途上，他唯有继续迎风而行，追寻自己心中的答案。每一次的选择，都如在命运的赌桌上掷下一枚枚筹码，等待着，终将揭晓的未知结局。</p>
+<h2 id="最初的相遇"><a href="#最初的相遇" class="headerlink" title="最初的相遇"></a>最初的相遇</h2><p>侯爵来到坎迪斯之后挂了招募队友的告示，但是因为自身形象过于没有说服力而且在坎迪斯没有名气，一直没人来找他商议入队事宜，于是他只能天天在工会喝闷酒<br>这时杜荀按照他师父的遗言打算前去投奔这个师父的好友，恰好在工会看见了他，于是二人相识。而此时杜荀已经是顶着屠龙者名号的A级冒险者了（虽然侯爵并不清楚具体是怎么得来的）<br>这时侯爵感觉自己抱到了大腿，打算借杜荀的力把自己的冒险者等级和名号也提升一下，于是两人都在互相信任对方有实力的前提下接取了高难度的委托<br>结果当然是被揍的差点小命都没了，大残状态从任务地点撤出来，正好碰上一个富有爱心的治疗师，也就是里昂丶九州 。疗伤完后，在二者的劝说下，她也留了下来入队<br>之后，阿尔法单纯被屠龙者的名号吸引来的，这个时候当地工会的老油条基本都知道了你们的实际情况，但是作为一个外来者，阿尔法并不知情，她只是在感到需要队友的时候自然而然的选择了看上去“最强”的队伍<br>队伍里的其他人早就听说阿尔法十分擅长战斗，而且发现她是因为觉得你们有足够的实力才加入的，所以就扯谎说你们的下一个目标是探索一个难度较高的地方，需要第五名擅长机械的队友才好进行探索<br>阿尔法在调试保养机体的时候被未籽意外发现，然后未籽被阿尔法摁倒，但是发现其没有恶意，于是放开了未籽，但是之后当未籽听见阿尔法加入了队伍，也跟着来了</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Watcher</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2024/11/06/%E4%B8%96%E7%95%8C%E8%AE%BE%E5%AE%9A%E5%92%8C%E8%83%8C%E6%99%AF%E6%95%85%E4%BA%8B/">http://example.com/2024/11/06/%E4%B8%96%E7%95%8C%E8%AE%BE%E5%AE%9A%E5%92%8C%E8%83%8C%E6%99%AF%E6%95%85%E4%BA%8B/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://example.com" target="_blank">霍利德埃伊</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/img/eye.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2024/11/06/%E7%AC%AC%E4%B8%80%E5%9B%9E%EF%BC%9A%E6%9C%80%E5%88%9D%E7%9A%84%E6%95%85%E4%BA%8B/" title="第一回：最初的故事（更新中）"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">第一回：最初的故事（更新中）</div></div><div class="info-2"><div class="info-item-1">英雄们集结完后接下了来路不明的委托，等待他们的会是......</div></div></div></a><a class="pagination-related" href="/2024/11/04/hello-world/" title="第一篇文章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">第一篇文章</div></div><div class="info-2"><div class="info-item-1">真的没有啥内容</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/eye.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Watcher</div><div class="author-info-description">G.M of FabulaUltima</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1GJ411x7h7/?spm_id_from=333.337.search-card.all.click&amp;vd_source=73c4b4bbd845184439573ae3b1967631"><i class="fab fa-github"></i><span>关注我（什）</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">完成的差不多了，之后也会继续更新的</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%96%E7%95%8C%E5%9F%BA%E6%9C%AC%E8%AE%BE%E5%AE%9A"><span class="toc-number">1.</span> <span class="toc-text">世界基本设定</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%BD%E5%AE%B6%E5%92%8C%E5%9C%B0%E5%8C%BA"><span class="toc-number">2.</span> <span class="toc-text">国家和地区</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%BC%E6%B5%B7%E4%BC%A6"><span class="toc-number">2.1.</span> <span class="toc-text">尼海伦</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9D%8E%E8%BF%AA%E6%96%AF"><span class="toc-number">2.2.</span> <span class="toc-text">坎迪斯</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%8A%E9%87%8C%E5%85%8B%E6%96%AF"><span class="toc-number">2.3.</span> <span class="toc-text">伊里克斯</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%A1%E5%A4%9A%E5%A7%86%E6%B5%B7%E5%B0%94%E7%8E%8B%E5%9B%BD"><span class="toc-number">2.4.</span> <span class="toc-text">凡多姆海尔王国</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%B7%E5%8D%A2%E5%8D%A1%E5%88%A9%E4%BA%9A"><span class="toc-number">2.5.</span> <span class="toc-text">雷卢卡利亚</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%BC%E9%B2%81%E5%BE%B7"><span class="toc-number">2.6.</span> <span class="toc-text">格鲁德</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%8F%E5%B0%94"><span class="toc-number">2.7.</span> <span class="toc-text">夏尔</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%AD%94%E7%8E%8B%E5%9F%8E"><span class="toc-number">2.8.</span> <span class="toc-text">魔王城</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%87%AA%E7%84%B6%E5%A5%87%E8%A7%82"><span class="toc-number">3.</span> <span class="toc-text">自然奇观</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E6%BC%A9%E6%B6%A1"><span class="toc-number">3.1.</span> <span class="toc-text">大漩涡</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B7%A8%E6%A0%91%E9%98%BF%E4%BA%9A%E5%A1%94"><span class="toc-number">3.2.</span> <span class="toc-text">巨树阿亚塔</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A5%A5%E5%B0%94%E6%B1%80%E7%81%AB%E5%B1%B1"><span class="toc-number">3.3.</span> <span class="toc-text">奥尔汀火山</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%AA%E5%B1%B1"><span class="toc-number">3.4.</span> <span class="toc-text">雪山</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A8%81%E8%83%81"><span class="toc-number">4.</span> <span class="toc-text">威胁</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E7%9A%84%E9%BB%91%E6%9A%97%E5%8A%9B%E9%87%8F%EF%BC%9F"><span class="toc-number">4.1.</span> <span class="toc-text">新的黑暗力量？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%84%E8%A8%80"><span class="toc-number">4.2.</span> <span class="toc-text">预言</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B0%9C%E5%9B%A2"><span class="toc-number">5.</span> <span class="toc-text">谜团</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%BE%99"><span class="toc-number">5.1.</span> <span class="toc-text">龙</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%96%E7%95%8C%E8%B5%B7%E6%BA%90"><span class="toc-number">5.2.</span> <span class="toc-text">世界起源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%96%E7%95%8C%E7%9A%84%E5%B0%BD%E5%A4%B4"><span class="toc-number">5.3.</span> <span class="toc-text">世界的尽头</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8E%86%E5%8F%B2%E4%BA%8B%E4%BB%B6"><span class="toc-number">6.</span> <span class="toc-text">历史事件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%AD%94%E6%B3%95%E5%90%AF%E8%92%99"><span class="toc-number">6.1.</span> <span class="toc-text">魔法启蒙</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E4%BB%A3%E9%AD%94%E7%8E%8B%E7%9A%84%E8%B4%A5%E5%8C%97"><span class="toc-number">6.2.</span> <span class="toc-text">初代魔王的败北</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E6%AE%B5%E8%AE%B0%E5%BD%95"><span class="toc-number">6.3.</span> <span class="toc-text">一段记录</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%8B%B1%E9%9B%84%E4%BB%AC"><span class="toc-number">7.</span> <span class="toc-text">英雄们</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BE%AF%E7%88%B5-%E8%89%BE%E7%91%9F%E5%B0%94%C2%B7%E5%86%AF%C2%B7%E5%B8%83%E6%8B%89%E6%A0%BC"><span class="toc-number">7.1.</span> <span class="toc-text">侯爵 艾瑟尔·冯·布拉格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%8F%E5%8F%B6%E5%AD%90-%E6%9C%AA%E7%B1%BD"><span class="toc-number">7.2.</span> <span class="toc-text">小叶子 未籽</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%B4%E5%BD%B1%E5%AE%88%E6%8A%A4%E8%80%85-%E9%87%8C%E6%98%82-%E4%B9%9D%E5%B7%9E"><span class="toc-number">7.3.</span> <span class="toc-text">阴影守护者 里昂.九州</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%BF%E5%B0%94%E6%B3%95-%E9%9C%B2%E8%A5%BF%E4%BA%9A%C2%B7%E6%B7%B1%E7%BA%A2%E5%9B%9A%E5%BD%B1"><span class="toc-number">7.4.</span> <span class="toc-text">阿尔法 露西亚·深红囚影</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%9A%E5%91%BD%E5%85%AC%E5%AD%90-%E6%9D%9C%E8%8D%80"><span class="toc-number">7.5.</span> <span class="toc-text">博命公子 杜荀</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E5%88%9D%E7%9A%84%E7%9B%B8%E9%81%87"><span class="toc-number">7.6.</span> <span class="toc-text">最初的相遇</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/11/06/%E7%AC%AC%E4%B8%80%E5%9B%9E%EF%BC%9A%E6%9C%80%E5%88%9D%E7%9A%84%E6%95%85%E4%BA%8B/" title="第一回：最初的故事（更新中）">第一回：最初的故事（更新中）</a><time datetime="2024-11-06T03:46:30.000Z" title="发表于 2024-11-06 11:46:30">2024-11-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/11/06/%E4%B8%96%E7%95%8C%E8%AE%BE%E5%AE%9A%E5%92%8C%E8%83%8C%E6%99%AF%E6%95%85%E4%BA%8B/" title="世界设定和背景故事">世界设定和背景故事</a><time datetime="2024-11-06T03:25:08.000Z" title="发表于 2024-11-06 11:25:08">2024-11-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/11/04/hello-world/" title="第一篇文章">第一篇文章</a><time datetime="2024-11-04T12:58:32.503Z" title="发表于 2024-11-04 20:58:32">2024-11-04</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent;"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2024 By Watcher</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
