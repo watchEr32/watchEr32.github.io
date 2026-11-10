@@ -422,6 +422,30 @@ kbd {
 }
 .doc-src code { font-family: var(--mono); }
 
+/* 评论区 */
+.comments {
+  margin: 52px 0 0;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+.comments-head { margin: 0 0 16px; }
+.comments-head h2 {
+  margin: 0 0 6px;
+  font-family: var(--serif);
+  font-size: 19px;
+  letter-spacing: .04em;
+  color: var(--ink);
+}
+.comments-hint { margin: 0; font-size: 12.5px; color: var(--muted); }
+.giscus-slot { min-height: 90px; }
+.giscus-slot:not(.is-ready)::before {
+  content: "评论加载中…";
+  display: block;
+  padding: 24px 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
 /* ------------------------------------------------------------- 正文排版 */
 .prose { color: var(--ink-2); font-size: 16px; line-height: 1.92; }
 .prose > *:first-child { margin-top: 0; }

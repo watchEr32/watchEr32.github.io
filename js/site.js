@@ -18,6 +18,7 @@
     var next = order[(order.indexOf(cur) + 1) % order.length];
     applyMode(next);
     try { next === 'auto' ? localStorage.removeItem(STORE) : localStorage.setItem(STORE, next); } catch (err) {}
+    document.dispatchEvent(new CustomEvent('wb:modechange'));
   });
 
   /* --------------------------------------------------------- 移动端导航 */
@@ -30,6 +31,68 @@
       document.body.classList.remove('nav-open');
     }
   });
+
+  /* --------------------------------------------------------------- 评论区 */
+  /* giscus：滚动到附近才加载，避免每个页面都去请求第三方脚本 */
+  var giscusSlot = document.querySelector('[data-giscus]');
+  if (giscusSlot) {
+    var gcLoaded = false;
+    var gcTheme = null;
+
+    function giscusTheme() {
+      var mode = root.getAttribute('data-mode') || 'auto';
+      var dark = mode === 'dark' || (mode === 'auto' && window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches);
+      return dark ? 'dark_dimmed' : 'light';
+    }
+
+    function pushTheme() {
+      var frame = document.querySelector('iframe.giscus-frame');
+      if (!frame) return;
+      var t = giscusTheme();
+      if (t === gcTheme) return;
+      gcTheme = t;
+      frame.contentWindow.postMessage({ giscus: { setConfig: { theme: t } } }, 'https://giscus.app');
+    }
+
+    function loadGiscus() {
+      if (gcLoaded) return;
+      gcLoaded = true;
+      var s = document.createElement('script');
+      s.src = 'https://giscus.app/client.js';
+      s.async = true;
+      s.crossOrigin = 'anonymous';
+      s.setAttribute('data-repo', giscusSlot.getAttribute('data-repo'));
+      s.setAttribute('data-repo-id', giscusSlot.getAttribute('data-repo-id'));
+      s.setAttribute('data-category', giscusSlot.getAttribute('data-category'));
+      s.setAttribute('data-category-id', giscusSlot.getAttribute('data-category-id'));
+      s.setAttribute('data-mapping', giscusSlot.getAttribute('data-mapping') || 'pathname');
+      s.setAttribute('data-strict', '0');
+      s.setAttribute('data-reactions-enabled', '1');
+      s.setAttribute('data-emit-metadata', '0');
+      s.setAttribute('data-input-position', 'top');
+      s.setAttribute('data-theme', giscusTheme());
+      s.setAttribute('data-lang', 'zh-CN');
+      s.setAttribute('data-loading', 'lazy');
+      giscusSlot.appendChild(s);
+      window.addEventListener('message', function (e) {
+        if (e.origin === 'https://giscus.app' && e.data && e.data.giscus) {
+          giscusSlot.classList.add('is-ready');
+          pushTheme();
+        }
+      });
+      document.addEventListener('wb:modechange', pushTheme);
+    }
+
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) { if (en.isIntersecting) { loadGiscus(); io.disconnect(); } });
+      }, { rootMargin: '400px' });
+      io.observe(giscusSlot);
+    } else {
+      loadGiscus();
+    }
+  }
 
   /* ------------------------------------------------------------- 搜索面板 */
   var panel = document.querySelector('[data-search-panel]');
