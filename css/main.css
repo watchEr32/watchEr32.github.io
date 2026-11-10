@@ -283,6 +283,7 @@ kbd {
   max-height: calc(100vh - 110px);
   overflow-y: auto;
   padding: 34px 20px 48px 24px;
+  min-height: calc(100vh - 62px);
   border-right: 1px solid var(--line);
   font-size: 13.5px;
   scrollbar-width: thin;
@@ -686,6 +687,7 @@ a.row-name:hover { color: var(--accent); }
   .rail {
     position: static;
     max-height: 46vh;
+    min-height: 0;
     overflow-y: auto;
     border-right: 0;
     border-bottom: 1px solid var(--line);
