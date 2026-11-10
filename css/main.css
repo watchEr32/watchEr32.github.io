@@ -543,6 +543,9 @@ a.row-name:hover { color: var(--accent); }
 .cat-node details[open] > summary::before { content: "－"; }
 .cat-node summary b { font-family: var(--mono); font-size: 10.5px; color: var(--muted); font-weight: 400; margin-left: 6px; }
 .cat-leaf { padding: 3px 0 3px 1.2em; font-size: 13.5px; color: var(--muted); }
+.cat-leaf a, .cat-page a { color: var(--ink-2); border-bottom: 1px solid var(--line-2); }
+.cat-leaf a:hover, .cat-page a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.cat-page { margin: 0 0 6px 1.6em; font-size: 13px; }
 
 /* -------------------------------------------------------- 文章 / 单页 */
 .page-head, .post-head { padding: 64px 0 26px; }
