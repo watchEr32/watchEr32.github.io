@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-mode="auto">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>能力等级与对抗 · 东🐳算法</title>
+<meta name="description" content="无限流 TRPG 规则书在线检索，附带一些跑团与创作的手记。">
+<meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14171b" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<meta name="wb-search" content="/search.json">
+<link rel="stylesheet" href="/css/main.css">
+<script>
+  (function () {
+    try {
+      var m = localStorage.getItem('wb-mode');
+      if (m === 'light' || m === 'dark') document.documentElement.setAttribute('data-mode', m);
+    } catch (e) {}
+  })();
+</script>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body class="is-doc">
+  <a class="skip" href="#main">跳到正文</a>
+  
+<header class="topbar">
+  <a class="brand" href="/">
+    <span class="brand-glyph" aria-hidden="true">🐳</span>
+    <span class="brand-text">
+      <span class="brand-name">东🐳算法</span>
+      <span class="brand-sub">无限流 TRPG 规则书与手记</span>
+    </span>
+  </a>
+
+  <nav class="topnav" aria-label="主导航">
+    
+      <a href="/">首页</a>
+    
+      <a href="/rules/" class=&#34;on&#34;>规则书</a>
+    
+      <a href="/archives/">归档</a>
+    
+      <a href="/about/">关于</a>
+    
+  </nav>
+
+  <div class="topbar-tools">
+    <button class="tool-btn" type="button" data-search-open aria-label="搜索规则">
+      <span class="tool-icon" aria-hidden="true">⌕</span>
+      <span class="tool-label">搜索</span>
+      <kbd>/</kbd>
+    </button>
+    <button class="tool-btn tool-icon-only" type="button" data-mode-toggle aria-label="切换深浅色">
+      <span class="mode-icon" aria-hidden="true">◐</span>
+    </button>
+    <button class="tool-btn tool-icon-only nav-toggle" type="button" data-nav-toggle aria-label="展开导航">
+      <span aria-hidden="true">≡</span>
+    </button>
+  </div>
+</header>
+
+  <div class="shell">
+    
+<aside class="rail" data-rail>
+  <div class="rail-head">
+    <a class="rail-back" href="/rules/">规则书</a>
+    <span class="rail-sep">/</span>
+    <span class="rail-sec">规则部分</span>
+  </div>
+
+  
+    
+    
+      
+      
+        <nav class="rail-group" aria-label="规则部分 下的条目">
+          <p class="rail-label">规则部分</p>
+          <ol class="rail-list">
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E7%AE%80%E4%BB%8B/">简介</a></li>
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E5%89%8D%E8%A8%80/">前言</a></li>
+            
+              <li class="rail-item"><span class="rail-plain">建立人物卡来参与游戏</span></li>
+            
+              <li class="rail-item is-here"><span class="rail-plain">战斗相关</span></li>
+            
+              <li class="rail-item"><span class="rail-plain">其他规则</span></li>
+            
+              <li class="rail-item"><span class="rail-plain">轮回之境</span></li>
+            
+              <li class="rail-item"><span class="rail-plain">名词查询和解释</span></li>
+            
+              <li class="rail-item"><span class="rail-plain">跑团经验指南</span></li>
+            
+              <li class="rail-item"><span class="rail-plain">玩梗</span></li>
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E8%8D%A3%E8%AA%89%E6%AE%BF%E5%A0%82/">荣誉殿堂</a></li>
+            
+          </ol>
+        </nav>
+      
+      
+    
+      
+      
+        <nav class="rail-group" aria-label="战斗相关 下的条目">
+          <p class="rail-label">战斗相关</p>
+          <ol class="rail-list">
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E7%94%9F%E5%91%BD%E5%80%BC%E3%80%81%E5%AF%BF%E5%91%BD%E4%B8%8E%E6%84%8F%E5%BF%97%E5%8A%9B/">生命值、寿命与意志力</a></li>
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E8%83%BD%E9%87%8F%E6%B1%A0%E4%B8%8E%E5%88%BB%E5%BA%A6/">能量池与刻度</a></li>
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E5%9C%BA%E6%99%AF%E3%80%81%E5%8A%A8%E4%BD%9C%E4%B8%8E%E9%80%9F%E5%BA%A6%E8%AF%B4%E6%98%8E/">场景、动作与速度说明</a></li>
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E6%88%98%E6%96%97%E8%A7%84%E5%88%99/">战斗规则</a></li>
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E6%88%98%E6%96%97%E8%BE%85%E5%8A%A9%E8%A7%84%E5%88%99/">战斗辅助规则</a></li>
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E9%A9%BE%E9%A9%B6%E8%BD%BD%E5%85%B7%E8%A7%84%E5%88%99/">驾驶载具规则</a></li>
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E9%AA%91%E4%B9%98%E6%88%98%E6%96%97%E8%A7%84%E5%88%99/">骑乘战斗规则</a></li>
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E4%BC%A4%E5%AE%B3%E7%B1%BB%E5%9E%8B%E4%B8%8E%E9%98%B2%E5%BE%A1%E7%B1%BB%E5%9E%8B/">伤害类型与防御类型</a></li>
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E4%B8%8D%E8%89%AF%E7%8A%B6%E6%80%81%E4%B8%8E%E7%82%B9%E6%95%B0/">不良状态与点数</a></li>
+            
+              <li class="rail-item is-here"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E8%83%BD%E5%8A%9B%E7%AD%89%E7%BA%A7%E4%B8%8E%E5%AF%B9%E6%8A%97/">能力等级与对抗</a></li>
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E4%BE%A6%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D/">侦测与定位</a></li>
+            
+              <li class="rail-item"><span class="rail-plain">施法与其他能力</span></li>
+            
+          </ol>
+        </nav>
+      
+      
+    
+    
+    
+  
+
+  <p class="rail-foot">
+    <a href="/catalog/">资源目录</a>
+    <span class="rail-sep">·</span>
+    <a href="/archives/">归档</a>
+    <span class="rail-sep">·</span>
+    <a href="/about/">关于</a>
+  </p>
+</aside>
+
+    <main id="main" class="main">
+      
+<div class="doc">
+  <article class="doc-body">
+    <nav class="crumbs" aria-label="位置">
+      
+        
+          <span class="crumb-here">规则部分</span>
+        
+      
+        
+          <span class="crumb-here">战斗相关</span>
+        
+      
+        
+          <span class="crumb-here">能力等级与对抗</span>
+        
+      
+    </nav>
+
+    <h1 class="doc-title">能力等级与对抗</h1>
+
+    
+      <details class="doc-toc">
+        <summary>本页 <b>4</b> 个小节</summary>
+        <ol>
+          <li><a href="#能力等级">能力等级</a></li><li><a href="#关于矛盾能力">关于矛盾能力</a></li><li><a href="#支线能力不会对抗的免疫能力列举和说明">支线能力不会对抗的免疫能力列举和说明</a></li><li><a href="#支线能力产生对抗的免疫能力列举和说明">支线能力产生对抗的免疫能力列举和说明</a></li>
+        </ol>
+      </details>
+    
+
+    <div class="prose"><p><strong>能力等级与对抗</strong> <strong>：</strong></p>
+<h2 id="能力等级"><a href="#能力等级" class="headerlink" title="能力等级"></a>能力等级</h2><p>资源部分中有很多比较能力等级的效果，因此特地明确能力的等级：</p>
+<p>能力拥有6个支线等级：无支线，D,C,B,A,S。双支线等于单支线等级。S级以上的能力皆视为S级，没有双S或者更多S的级别能力。</p>
+<p>无论能力内部怎么称呼，当进行类似不同能力或效果之间的等级比较时，以该能力的支线等级为准。如无特别说明，则视为其购买价格的等级。</p>
+<p>血统、改造、称号带来的能力，其能力等级与其所购买时就已经决定了，除非特殊说明，否则不会自动升级或者降级。</p>
+<p>能力等级带来的免疫能力范例：</p>
+<p>例1：D级免疫属性伤害。</p>
+<p>此时人物受到了一个D级毒素，毒素的效果是每轮1点毒素伤害和1点属性伤害。由于你免疫属性伤害，此时虽然你不免疫毒素，但是也只会受到毒素伤害，而不会受到属性伤害。</p>
+<p>例2：D级免疫毒素伤害。</p>
+<p>此时人物受到了一个D级毒素，毒素的效果是每轮1点毒素伤害和1点属性伤害。由于你免疫毒素伤害，所以你免疫毒素伤害，但是会如常受到属性伤害。</p>
+<p>例3：D级免疫毒素伤害。</p>
+<p>此时人物受到了一个D级毒素，毒素的效果是每轮1点毒素伤害，若目标因此受到毒素伤害则受到1点属性伤害。由于你免疫毒素伤害，所以你免疫毒素伤害，同时该毒素伤害的后续效果也不再生效。</p>
+<p>例4：D级免疫毒素效果。</p>
+<p>此时人物受到了一个D级毒素，毒素的效果是每轮1点毒素伤害和1点属性伤害。由于你免疫毒素效果，所以你无视全部效果。</p>
+<p>例5：免疫C级心灵影响效果。</p>
+<p>此时人物受5点恐惧点数，这是一个C级心灵影响能力。由于你免疫C级心灵影响效果，所以你无视恐惧点数。</p>
+<p>例6：免疫恐惧点数</p>
+<p>此时人物受5点恐惧点数，这是一个C级心灵影响能力。由于你免疫恐惧点数，所以无视本能力对你造成的影响。</p>
+<h2 id="关于矛盾能力"><a href="#关于矛盾能力" class="headerlink" title="关于矛盾能力"></a>关于矛盾能力</h2><p>互相完全矛盾的能力，按支线等级决定优劣。在同等级下盾（防御方）优先，较高级的矛（攻击方）可以攻破低级的盾。</p>
+<p>以下是一些盾方的举例：</p>
+<p>措手不及-免疫措手不及对抗中的免疫方</p>
+<p>侦测-反侦测对抗中的侦测方</p>
+<p>诸如此类。</p>
+<p>矛盾的能力必须是完全针锋相对（例如使对手措手不及&#x2F;免疫措手不及，隐形&#x2F;反隐形等，接触攻击&#x2F;免疫接触攻击效果等）。</p>
+<p>如：角色获得了C级免疫措手不及能力。他在面对一个C级措手不及的能力，不会措手不及；但在面对一个B级措手不及能力时，仍然会陷入措手不及状态。</p>
+<p>非完全矛盾的能力，如武器具有的破甲值和防具具有的抗破甲值等不在此列，理由是武器的破甲值不仅针对防具的抗破甲值，而且针对防具本身防御和天生防御值（即非完全矛盾）。</p>
+<h2 id="支线能力不会对抗的免疫能力列举和说明"><a href="#支线能力不会对抗的免疫能力列举和说明" class="headerlink" title="支线能力不会对抗的免疫能力列举和说明"></a>支线能力不会对抗的免疫能力列举和说明</h2><p>以下能力没有针锋相对的能力：</p>
+<p>免疫伤害：免疫伤害一般为单独免疫某个伤害类型，可以免疫的伤害类型一般为钝击伤害，挥砍伤害，穿刺伤害，实弹伤害，纯能量伤害，火焰伤害，冰霜伤害，雷电伤害，腐蚀伤害，光明伤害，黑暗伤害，毒素伤害，音波伤害，光能伤害，精神伤害，力场伤害，坠落伤害，坠落物伤害等。</p>
+<p>免疫寿命影响：你不会受到衰老等类似效果的影响。</p>
+<p>免疫擒抱：你不会处于被擒抱状态，目标的擒抱检定自动失败。</p>
+<p>免疫摔绊：你不会被摔绊，目标的摔绊检定自动失败。</p>
+<p>免疫冲撞：你不会被冲撞，目标的冲撞检定自动失败。</p>
+<p>免疫特定部位打击：你没有特定部位打击，攻击方就算如常承受特定部位减值，但是你也不会受到特定部位影响。</p>
+<p>免疫击落武器：你手持的武器不会被人击落。</p>
+<p>免疫破甲：破甲不会对你造成影响。</p>
+<p>免疫破魔：破魔不会对你造成影响。</p>
+<p>免疫高速：高速不会对你造成影响。</p>
+<p>免疫困难地形：你无视困难地形对你的影响。</p>
+<p>免疫环境影响：你免疫该环境带来的环境效果，若该环境里有加值，减值，伤害等效果，一并免疫。（如，宇宙作战：免疫宇宙环境的影响）</p>
+<p>免疫8加骰：你免疫8加骰与9加骰对你的影响。</p>
+<p>免疫9加骰：你免疫9加骰对你的影响。</p>
+<p>免疫变形：角色不会受到任何改变形态和改变生物类型的影响。</p>
+<p>免疫附身：角色无法被附身。</p>
+<p>免疫不良点数：免疫不良状态点数一般为单独免疫某个不良状态点数，可以免疫的类型有免疫燃烧点数，免疫冻结点数，免疫剧痛点数，免疫恶心点数，免疫耳鸣点数，免疫目眩点数，免疫晶化点数，免疫精神束缚，免疫纠缠点数，免疫麻痹点数，免疫眩晕点数，免疫魅惑点数，免疫流血点数，免疫疲乏点数，免疫失速点数，免疫欲睡点数，免疫肢体妨碍，免疫恐惧点数，免疫亢奋点数，免疫沮丧点数。若没有特殊说明，则该免疫是指完全不会获得该不良状态点数。</p>
+<p>免疫多次攻击减值：多次攻击不会为你带来多次攻击减值的影响。</p>
+<p>免疫不良状态：免疫不良状态一般为单独免疫某个不良状态，可以免疫的类型有免疫冰封，免疫反胃，免疫石化，免疫迷情，免疫力竭，免疫目盲，免疫耳聋，免疫睡眠，免疫惊惧，免疫狂躁，免疫厌世。拥有免疫这些能力不会使你免疫对应的不良状态点数，只是这些不良点数不会使你进入这些状态罢了。</p>
+<p>免疫衰老：你不会受到衰老和影响年龄的效果影响，同时，所有你消耗年龄或者使自己衰老的以达成某些效果的能力你在使用时，不会受到本能力影响，此时你会如常衰老。</p>
+<p>免疫沉默：你不会受到沉默影响。</p>
+<p>免疫窒息：你不会受到窒息影响，一般没有呼吸系统的生物自动免疫窒息。</p>
+<p>免疫禁锢：你不会被禁锢。</p>
+<p>免疫放逐：你不会被放逐。</p>
+<p>免疫幻觉：你不会受到幻觉影响。注意：免疫幻象，免疫幻术，看破幻觉，看破幻术，看破幻象，都是这个意思。</p>
+<p>免疫封印：你不会被封印，包括你的能量池等，但是不包括你所持有的物品。</p>
+<p>禁止复活——复活能力。</p>
+<h2 id="支线能力产生对抗的免疫能力列举和说明"><a href="#支线能力产生对抗的免疫能力列举和说明" class="headerlink" title="支线能力产生对抗的免疫能力列举和说明"></a>支线能力产生对抗的免疫能力列举和说明</h2><p>以下能力若遇到比自己支线等级高且针锋相对的能力则需要计算双方等级来进行对抗。</p>
+<p>反侦察（隐形）——侦查能力。</p>
+<p>免疫施法者职能或者其他类似的效果——除非你自愿，否则该施法者职能或者其他类似能力造成的效果。</p>
+<p>免疫即死——即死能力。你不会受到即死效果影响。</p>
+<p>免疫疾病——疾病。你不会受到疾病效果影响。</p>
+<p>免疫毒素——毒素。你不会受到毒素效果影响。</p>
+<p>免疫心灵影响——心灵效果。除非你自愿，否则你不会受到心灵效果影响。</p>
+<p>免疫措手不及——造成措手不及。你无视目标对你的措手不及。</p>
+<p>免疫接触攻击——造成接触攻击。你无视目标对你的接触攻击。</p>
+<p>免疫诅咒——诅咒。你不会受到诅咒影响，当然也包括某些施法专业为“诅咒”的法术影响。</p>
+<p>免疫时间——时间效果。除非你自愿，否则你不会受到时间相关能力的影响。</p>
+<p>免疫空间——空间效果。除非你自愿，否则你不会受到空间，传送相关能力的影响。</p>
+<p>免疫因果律——因果律效果。除非你自愿，否则你不会受到因果律相关能力的影响。</p>
+<p><strong>环境效果的对抗：</strong><br>环境效果的对抗不按照上述对抗，因为环境效果大部分情况下没有支线等级。<br>所以，除非有特殊说明，否则环境效果遵循先来后到的效果，如一个区域原本为黑暗，则火把进入，则该区域因火把变为明亮，然后黑暗术，这使该范围变为黑暗，此时火把如果移动出范围然后再此移动进去，则再次照明。这必须要求火把的照明范围完全脱离黑暗术的范围才会重新计算先来后到，否则黑暗术依然可以影响火把带来的光明效果，当然在黑暗术笼罩之外的区域，火把可以如常照明。<br>需要注意的是，光源如果被遮蔽，那么整个区域都会陷入黑暗，同时光源也遵循先来后到的原则，若一个区域光源唯一，之后被黑暗术笼罩，那么整个区域会陷入黑暗之中。但是若光源重新点亮，则可以无视黑暗术的效果。</p>
+</div>
+
+    <nav class="pager">
+      
+        <a class="pager-item pager-prev" href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E4%B8%8D%E8%89%AF%E7%8A%B6%E6%80%81%E4%B8%8E%E7%82%B9%E6%95%B0/">
+          <span class="pager-key">上一页</span>
+          <span class="pager-title">不良状态与点数</span>
+        </a>
+      
+      
+        <a class="pager-item pager-next" href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E4%BE%A6%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D/">
+          <span class="pager-key">下一页</span>
+          <span class="pager-title">侦测与定位</span>
+        </a>
+      
+    </nav>
+
+    
+      <p class="doc-src">源文件：<code>能力等级与对抗.htm</code></p>
+    
+  </article>
+</div>
+
+    </main>
+  </div>
+  <footer class="site-foot">
+  <div class="foot-inner">
+    <p class="foot-note">规则文本整理自《无限流 TRPG 3.26 正式版》CHM，仅供跑团查阅使用。</p>
+    <p class="foot-meta">
+      <span>© 2026 鲸鱼娘</span>
+      <span class="dot">·</span>
+      <span>Hexo 构建</span>
+      <span class="dot">·</span>
+      <a href="/rules/">规则书目录</a>
+    </p>
+  </div>
+</footer>
+
+  <div class="searchbox" data-search-panel hidden>
+  <div class="searchbox-backdrop" data-search-close></div>
+  <div class="searchbox-panel" role="dialog" aria-modal="true" aria-label="站内搜索">
+    <div class="searchbox-field">
+      <span class="searchbox-glyph" aria-hidden="true">⌕</span>
+      <input type="search" data-search-input placeholder="查一条规则、一个专长、一个名词…" autocomplete="off" spellcheck="false">
+      <button class="searchbox-hint" type="button" data-search-close>Esc</button>
+    </div>
+    <div class="searchbox-body" data-search-results>
+      <p class="searchbox-empty">输入关键词开始检索，支持多词，用空格分开。</p>
+    </div>
+    <div class="searchbox-foot">
+      <span><kbd>↑</kbd><kbd>↓</kbd> 选择</span>
+      <span><kbd>Enter</kbd> 打开</span>
+      <span class="searchbox-count" data-search-count></span>
+    </div>
+  </div>
+</div>
+
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

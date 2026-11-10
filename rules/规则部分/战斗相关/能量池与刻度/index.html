@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-mode="auto">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>能量池与刻度 · 东🐳算法</title>
+<meta name="description" content="无限流 TRPG 规则书在线检索，附带一些跑团与创作的手记。">
+<meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14171b" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<meta name="wb-search" content="/search.json">
+<link rel="stylesheet" href="/css/main.css">
+<script>
+  (function () {
+    try {
+      var m = localStorage.getItem('wb-mode');
+      if (m === 'light' || m === 'dark') document.documentElement.setAttribute('data-mode', m);
+    } catch (e) {}
+  })();
+</script>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body class="is-doc">
+  <a class="skip" href="#main">跳到正文</a>
+  
+<header class="topbar">
+  <a class="brand" href="/">
+    <span class="brand-glyph" aria-hidden="true">🐳</span>
+    <span class="brand-text">
+      <span class="brand-name">东🐳算法</span>
+      <span class="brand-sub">无限流 TRPG 规则书与手记</span>
+    </span>
+  </a>
+
+  <nav class="topnav" aria-label="主导航">
+    
+      <a href="/">首页</a>
+    
+      <a href="/rules/" class=&#34;on&#34;>规则书</a>
+    
+      <a href="/archives/">归档</a>
+    
+      <a href="/about/">关于</a>
+    
+  </nav>
+
+  <div class="topbar-tools">
+    <button class="tool-btn" type="button" data-search-open aria-label="搜索规则">
+      <span class="tool-icon" aria-hidden="true">⌕</span>
+      <span class="tool-label">搜索</span>
+      <kbd>/</kbd>
+    </button>
+    <button class="tool-btn tool-icon-only" type="button" data-mode-toggle aria-label="切换深浅色">
+      <span class="mode-icon" aria-hidden="true">◐</span>
+    </button>
+    <button class="tool-btn tool-icon-only nav-toggle" type="button" data-nav-toggle aria-label="展开导航">
+      <span aria-hidden="true">≡</span>
+    </button>
+  </div>
+</header>
+
+  <div class="shell">
+    
+<aside class="rail" data-rail>
+  <div class="rail-head">
+    <a class="rail-back" href="/rules/">规则书</a>
+    <span class="rail-sep">/</span>
+    <span class="rail-sec">规则部分</span>
+  </div>
+
+  
+    
+    
+      
+      
+        <nav class="rail-group" aria-label="规则部分 下的条目">
+          <p class="rail-label">规则部分</p>
+          <ol class="rail-list">
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E7%AE%80%E4%BB%8B/">简介</a></li>
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E5%89%8D%E8%A8%80/">前言</a></li>
+            
+              <li class="rail-item"><span class="rail-plain">建立人物卡来参与游戏</span></li>
+            
+              <li class="rail-item is-here"><span class="rail-plain">战斗相关</span></li>
+            
+              <li class="rail-item"><span class="rail-plain">其他规则</span></li>
+            
+              <li class="rail-item"><span class="rail-plain">轮回之境</span></li>
+            
+              <li class="rail-item"><span class="rail-plain">名词查询和解释</span></li>
+            
+              <li class="rail-item"><span class="rail-plain">跑团经验指南</span></li>
+            
+              <li class="rail-item"><span class="rail-plain">玩梗</span></li>
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E8%8D%A3%E8%AA%89%E6%AE%BF%E5%A0%82/">荣誉殿堂</a></li>
+            
+          </ol>
+        </nav>
+      
+      
+    
+      
+      
+        <nav class="rail-group" aria-label="战斗相关 下的条目">
+          <p class="rail-label">战斗相关</p>
+          <ol class="rail-list">
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E7%94%9F%E5%91%BD%E5%80%BC%E3%80%81%E5%AF%BF%E5%91%BD%E4%B8%8E%E6%84%8F%E5%BF%97%E5%8A%9B/">生命值、寿命与意志力</a></li>
+            
+              <li class="rail-item is-here"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E8%83%BD%E9%87%8F%E6%B1%A0%E4%B8%8E%E5%88%BB%E5%BA%A6/">能量池与刻度</a></li>
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E5%9C%BA%E6%99%AF%E3%80%81%E5%8A%A8%E4%BD%9C%E4%B8%8E%E9%80%9F%E5%BA%A6%E8%AF%B4%E6%98%8E/">场景、动作与速度说明</a></li>
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E6%88%98%E6%96%97%E8%A7%84%E5%88%99/">战斗规则</a></li>
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E6%88%98%E6%96%97%E8%BE%85%E5%8A%A9%E8%A7%84%E5%88%99/">战斗辅助规则</a></li>
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E9%A9%BE%E9%A9%B6%E8%BD%BD%E5%85%B7%E8%A7%84%E5%88%99/">驾驶载具规则</a></li>
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E9%AA%91%E4%B9%98%E6%88%98%E6%96%97%E8%A7%84%E5%88%99/">骑乘战斗规则</a></li>
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E4%BC%A4%E5%AE%B3%E7%B1%BB%E5%9E%8B%E4%B8%8E%E9%98%B2%E5%BE%A1%E7%B1%BB%E5%9E%8B/">伤害类型与防御类型</a></li>
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E4%B8%8D%E8%89%AF%E7%8A%B6%E6%80%81%E4%B8%8E%E7%82%B9%E6%95%B0/">不良状态与点数</a></li>
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E8%83%BD%E5%8A%9B%E7%AD%89%E7%BA%A7%E4%B8%8E%E5%AF%B9%E6%8A%97/">能力等级与对抗</a></li>
+            
+              <li class="rail-item"><a href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E4%BE%A6%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D/">侦测与定位</a></li>
+            
+              <li class="rail-item"><span class="rail-plain">施法与其他能力</span></li>
+            
+          </ol>
+        </nav>
+      
+      
+    
+    
+    
+  
+
+  <p class="rail-foot">
+    <a href="/catalog/">资源目录</a>
+    <span class="rail-sep">·</span>
+    <a href="/archives/">归档</a>
+    <span class="rail-sep">·</span>
+    <a href="/about/">关于</a>
+  </p>
+</aside>
+
+    <main id="main" class="main">
+      
+<div class="doc">
+  <article class="doc-body">
+    <nav class="crumbs" aria-label="位置">
+      
+        
+          <span class="crumb-here">规则部分</span>
+        
+      
+        
+          <span class="crumb-here">战斗相关</span>
+        
+      
+        
+          <span class="crumb-here">能量池与刻度</span>
+        
+      
+    </nav>
+
+    <h1 class="doc-title">能量池与刻度</h1>
+
+    
+      <details class="doc-toc">
+        <summary>本页 <b>9</b> 个小节</summary>
+        <ol>
+          <li><a href="#能量池的获得">能量池的获得</a></li><li><a href="#临时的能量池上限变动">临时的能量池上限变动</a></li><li><a href="#刻度的获得">刻度的获得</a></li><li><a href="#刻度的上限">刻度的上限</a></li><li><a href="#刻度的使用与回复方式">刻度的使用与回复方式</a></li><li><a href="#刻度之间的兼容性">刻度之间的兼容性</a></li><li><a href="#刻度与能量池的兼容性">刻度与能量池的兼容性</a></li><li><a href="#临时的刻度上限变动">临时的刻度上限变动</a></li><li><a href="#同名刻度">同名刻度</a></li>
+        </ol>
+      </details>
+    
+
+    <div class="prose"><p><strong>能量池</strong> <strong>：</strong></p>
+<p>由于角色的锻炼以及各种修行，逐渐会习得各式各样的能力，其中很多能力只能依靠能量才可以推动，比如魔法，道术，武学招式等等，于是，这就出现了各式各样的能量池：如魔力，内力，斗气，原力，灵力等等。</p>
+<p><strong>能量池的</strong>  <strong>大分类：</strong></p>
+<p>资源部分中的能量池分为通用能量池和特殊能量池。</p>
+<p>通用能量池通常又分为东方能量池、西方能量池。一些通用能量池同时属于东方与西方能量池，这种情况下它们被称作东西方皆有的能量池。</p>
+<p>而通用能量池基于关键属性，可以将能量池细分为生理系能量池、心智系能量池、互动系能量池。</p>
+<p>对于两个关键属性分别包含在2个属性类别中的能量池而言，其具备两种能量池特性，在计算某些能力的前置时，你视为满足，而当你面对某些对抗效果时，对方视为也满足。</p>
+<p>例：比如你具备内力能量池，其相关属性为耐力+感知，所以在判定上既属于东方生理系能量池，也属于东方心智系能量池。</p>
+<p>特殊能量池既不是东方也不是西方能量池，同时无论其是否有关键属性，也不被判定为生理系能量池、心智系能量池、互动系能量池的任何一种。</p>
+<p><strong>能量池的关键属性</strong> <strong>：</strong></p>
+<p>能量池一般都拥有自己的关键属性。关键属性决定了能量池的上限。</p>
+<p>关键属性一般为2个属性，这2个属性之和即为该能量池大小的基础上限。</p>
+<p>例：假设某一个能量池，其关键属性为耐力+风度，若耐力为3，风度为4，则该能量池的基础上限为7。</p>
+<p>所有对于该能量池关键属性的检定，指以关键属性之和为DP进行的检定。</p>
+<h2 id="能量池的获得"><a href="#能量池的获得" class="headerlink" title="能量池的获得"></a>能量池的获得</h2><p>能量池一般有三种获得方法：</p>
+<p>直接购买：有些能量池可以直接购买，如建卡专长，他们会在各自的页面或者对应的能力下进行标价。</p>
+<p>随资源附送：有些能量池没有标价，只能通过其他资源来赠送。有些能力可以让玩家自行选择某个能量池，在这种情况下，只要没有特殊说明，玩家只能选择通用能量池。</p>
+<p>晋级：有些能量池，如真元力，无法通过与“购买”相关的方法来获得。必须通过特殊的手段让其他能量池晋级为真元力能量池。具体的方法会在各个能量池页面详述。</p>
+<p><strong>能量池的使用</strong> <strong>：</strong></p>
+<p>每个能量池都会在其页面提及该能量的具体使用方法。在此之外，一些称号、改造、血统等可能会在玩家购买后提供某些能量池的其他用法。</p>
+<p><strong>能量池的回复</strong> <strong>：</strong></p>
+<p>每个能量池都会在其页面提及该能量的回复手段。在此之外，一些称号、改造、血统等可能会在玩家购买时提供某些能量池的其它回复方法。</p>
+<p><strong>能量池的代替消耗</strong> <strong>：</strong></p>
+<p>某些能量池之间可以互相代替消耗。</p>
+<p>这种情况下，当目标有对应的免疫对应能量池的情况，则按照新的能量池计算。</p>
+<p>如：针对免疫心智系能量的效果，使用用源能代替内力，代替后的内力效果不会被免疫。</p>
+<p>如：针对免疫心智系能量的效果，使用浩然之气代替妖力，则代替后的浩然之气效果会被免疫。</p>
+<p><strong>能量池的兼容性</strong> <strong>：</strong></p>
+<p>某些能量池之间无法互相兼容。当玩家获得冲突的能量池时，则无豁免、不可避免地爆体而亡。</p>
+<p>一般情况下，若没有说明，则大部分能量池都可以互相兼容。</p>
+<p>能量池的兼容模式一般可以分为以下几类：</p>
+<p>无排斥性：这样的能量池自身不会排斥其他能量池，但有可能被其他能量池排斥。</p>
+<p>只兼容XX能量池：这样的能量池只能兼容符合XX性质或分类的能量池，并且排斥其他所有类型的能量池。举例：只兼容东方能量池；只兼容西方能量池；只兼容特殊能量池；只兼容生理系能量池。</p>
+<p>不兼容XX能量池：这样的能量池排斥所有符合XX性质或分类的能量池，并且兼容其他所有类型的能量池。举例：不兼容东方能量池；不兼容西方能量池；不兼容特殊能量池；不兼容心智系能量池。</p>
+<p>排斥XX刻度：这样的能量池排斥XX性质的刻度。</p>
+<p>能量池可以有上述一种或多种兼容模式。</p>
+<p>补充说明：显然，在“只兼容东方能量池”的情况下，东西方皆有的能量池因为可以分类为西方能量池，会遭到排斥；同时，在“不兼容东方能量池”的情况下，东西方皆有的能量池因为可以分类为东方能量池，也会遭到排斥。</p>
+<p><strong>无法再次获得能量池</strong> <strong>：</strong></p>
+<p>无法再次获得某一性质的能量池是一个立足于时间点的效果。从某一个特定时间点后，角色会开始不兼容这一性质的能量池。</p>
+<p>例：角色获得真元力后无法再次获得东方通用能量池。这意味着从角色凝练出第一点真元力时开始，除了参与凝练真元力的东方通用能量池之外，无法通过任何方法和能力获得任何1点东方通用能量池（增加现有的能量池上限，开启新的动能量池等）。</p>
+<p>例：角色甲将内力凝炼为真元力，参与凝练的能量池只有内力。在凝炼到一半时，角色甲通过购买血统获取了龙气，忽略血统中获得龙气的效果。</p>
+<p><strong>攻击能量池</strong> <strong>：</strong></p>
+<p>任何针对其他角色的能量池造成负面效果的能力都被定义为攻击能量池。</p>
+<p>如：封印该能量池，使该能量池降低上限，使该能量池损失能量等。</p>
+<p><strong>节能消耗</strong> <strong>：</strong></p>
+<p>有些资源允许你在消耗某些能量池时，减少一部分消耗。</p>
+<p>若其消耗被降低，则对应的效果不会发生改变，如常计算其原本的效果。</p>
+<p>如果某些能力是消耗全部能量，则不触发任何减少消耗的能力。</p>
+<p>若有多个能力可以针对同一次消耗进行减少能耗，则只能选择其中一个能力触发。</p>
+<p><strong>能量池的重复开启</strong> <strong>：</strong></p>
+<p>当人物因为任何来源而开启能量池时，若之前已经拥有了相同的能量池，那么作为补偿，他可以在这个能量池的上限上获得一定程度的提升。</p>
+<p>这个来源必须是完全不同的，例如血统、称号或技能。第一次重复获得时，可以获得额外的 5 点上限；第二次则是 3 点，第三次则是<br>1点，之后再次重复获得相同能量池将不会再获得任何提升。</p>
+<p>例：玩家欧阳选择了宝石人血统，并且因此而获得了魔力能量池。接着，他又选择了魔术师称号，并且再一次获得了魔力能量池，因此他的魔力池上限提升<br>5点。之后他又购买了一本《死灵之书》并且因此而再次获得了魔力能量池，因为之前他已经获得过一次额外提升，所以此时他的魔力池上限只会提升 3 点。</p>
+<h2 id="临时的能量池上限变动"><a href="#临时的能量池上限变动" class="headerlink" title="临时的能量池上限变动"></a>临时的能量池上限变动</h2><p>人物有可能因为某些原因能量池池上限会因此改变，如临时增加属性等。</p>
+<p>这种情况下，人物只会增加能量池的上限，并不会增加能量，除非你有回复能量的能。</p>
+<p>例：若你临时获得1点智力，则对应的魔力池上限+1，但是这是一点空的魔力池上限，你不会获得额外的可供消耗的魔力值。</p>
+<p>若你遭受能量池上限失去的能力，比如失去1点属性，这种情况下对应的能量池上限-1，同时若此时你当前的能量大于你的能量池上限，则失去超过的部分，若之后能量池上限回复，你不会将失去的能量补还。</p>
+<p>例：若你失去1点智力，则降低1点魔力池上限，同时若你当前的魔力值大于魔力池上限，则失去超出上限的部分。之后若你的智力回复，则你的魔力池上限回复，但是因为超出上限而失去的魔力不会返还。</p>
+<p><strong>不视为能量池</strong> <strong>：</strong></p>
+<p>一些能量池具有“不视为能量池”的特性，因此，这类能量池相比起其他能量池，还会出现以下变化：</p>
+<p>如果没有特殊说明，“不视为能量池”的能量池无法通过针对能量池的能力进行强化。</p>
+<p>如果没有特殊说明，“不视为能量池”的能量池无法被选择用于某个可以自由选择能量池的能力的消耗。</p>
+<p>如果没有特殊说明，“不视为能量池”的能量池无法被某些需要绑定能量池的强化所绑定。</p>
+<p>如果没有特殊说明，“不视为能量池”的能量池不会受到攻击能量池的效果。</p>
+<p>如果没有特殊说明，“不视为能量池”的能量池在判断兼容性时，不会被其他能量池排斥。</p>
+<p>除此之外的部分与其他能量池规则相同。</p>
+<p><strong>刻度</strong> <strong>：</strong></p>
+<p>除了能量池之外，还有很多能力需要使用刻度来进行计量。刻度是另一种计量角色相关能力的数据，根据刻度角色可以启动或者发动某些能力，刻度有的可以被消耗，有的不会被消耗，每个刻度的机制都有可能是独一无二的。</p>
+<p>刻度不是能量池。</p>
+<h2 id="刻度的获得"><a href="#刻度的获得" class="headerlink" title="刻度的获得"></a>刻度的获得</h2><p>刻度能且只能随资源附送。一些血统、改造或称号提供了专属于各自的刻度。</p>
+<h2 id="刻度的上限"><a href="#刻度的上限" class="headerlink" title="刻度的上限"></a>刻度的上限</h2><p>有些刻度有上限。上限的数值可能基于属性、技能，也可能是固定值。</p>
+<p>也有一些刻度完全没有上限。</p>
+<p>这些都在对应的资源页面有各自的详细说明。</p>
+<h2 id="刻度的使用与回复方式"><a href="#刻度的使用与回复方式" class="headerlink" title="刻度的使用与回复方式"></a>刻度的使用与回复方式</h2><p>有些刻度在获得时，可供消耗的刻度数值是满上限，另一些刻度在获得时，可供消耗的初始数值为0，或者是基于其他某个数值。</p>
+<p>提供刻度的资源必定提及了刻度的使用方法或会带来的影响，并且也提供了刻度的回复方式或降低方式。</p>
+<h2 id="刻度之间的兼容性"><a href="#刻度之间的兼容性" class="headerlink" title="刻度之间的兼容性"></a>刻度之间的兼容性</h2><p>通常情况下，刻度互相之间都可以兼容。在极稀少的情况下，可能会有某些刻度排斥另一些刻度。无论如何，当玩家拥有的刻度产生冲突时，则无豁免、不可避免地爆体而亡。</p>
+<h2 id="刻度与能量池的兼容性"><a href="#刻度与能量池的兼容性" class="headerlink" title="刻度与能量池的兼容性"></a>刻度与能量池的兼容性</h2><p>通常情况下，玩家拥有刻度不影响玩家获取能量池，反之亦然。在极稀少的情况下，可能会有某些能量池排斥刻度，或某些刻度排斥特定类型的能量池。无论如何，当玩家拥有的刻度与能量池产生冲突时，则无豁免、不可避免地爆体而亡。</p>
+<h2 id="临时的刻度上限变动"><a href="#临时的刻度上限变动" class="headerlink" title="临时的刻度上限变动"></a>临时的刻度上限变动</h2><p>一般情况下，刻度的上限不会轻易改变。有些上限与属性或技能（乃至传奇属性与技能附加成功）挂钩的刻度，会因为临时提升或丢失属性与技能等级，导致刻度上限出现变化。</p>
+<p>若你临时获得刻度上限增加的能力，比如获得1点属性或传奇属性，这种情况下仅仅增加上限，不会增加刻度值，除非你有回复刻度的能力。</p>
+<p>例：某刻度上限是传奇敏捷。若角色临时获得1点敏捷，使自身的敏捷从30提升到31，则传奇敏捷提升了1点，该刻度的上限+1，但是这是1点空的上限，角色不会因此获得1点额外的可供消耗的刻度。</p>
+<p>若你遭受刻度上限失去的能力，比如失去1点属性或传奇属性，这种情况下对应的刻度上限-1，同时若此时你当前的刻度数值大于你的刻度上限，则失去超过的部分，若之后刻度上限回复，你不会将失去的刻度值补还。</p>
+<p>例：某刻度上限是传奇风度。若角色临时丢失1点风度，使自身的风度从16降低到15，则传奇风度降低了1点，该刻度的上限-1，同时若角色当前的刻度数值大于刻度上限，则失去超出上限的部分。之后若角色的风度回复，则角色的刻度上限回复，但是因为超出上限而失去的刻度不会返还。</p>
+<h2 id="同名刻度"><a href="#同名刻度" class="headerlink" title="同名刻度"></a>同名刻度</h2><p>极稀少的情况下，可能会有多个不同的强化提供了同名的刻度。在没有特殊说明的情况下，这些同名刻度各自独立存在，并且每一个强化只能依据其自身提供的刻度来发动能力。</p>
+<p>角色不能跨强化计算同名刻度值。</p>
+</div>
+
+    <nav class="pager">
+      
+        <a class="pager-item pager-prev" href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E7%94%9F%E5%91%BD%E5%80%BC%E3%80%81%E5%AF%BF%E5%91%BD%E4%B8%8E%E6%84%8F%E5%BF%97%E5%8A%9B/">
+          <span class="pager-key">上一页</span>
+          <span class="pager-title">生命值、寿命与意志力</span>
+        </a>
+      
+      
+        <a class="pager-item pager-next" href="/rules/%E8%A7%84%E5%88%99%E9%83%A8%E5%88%86/%E6%88%98%E6%96%97%E7%9B%B8%E5%85%B3/%E5%9C%BA%E6%99%AF%E3%80%81%E5%8A%A8%E4%BD%9C%E4%B8%8E%E9%80%9F%E5%BA%A6%E8%AF%B4%E6%98%8E/">
+          <span class="pager-key">下一页</span>
+          <span class="pager-title">场景、动作与速度说明</span>
+        </a>
+      
+    </nav>
+
+    
+      <p class="doc-src">源文件：<code>能量池与刻度.htm</code></p>
+    
+  </article>
+</div>
+
+    </main>
+  </div>
+  <footer class="site-foot">
+  <div class="foot-inner">
+    <p class="foot-note">规则文本整理自《无限流 TRPG 3.26 正式版》CHM，仅供跑团查阅使用。</p>
+    <p class="foot-meta">
+      <span>© 2026 鲸鱼娘</span>
+      <span class="dot">·</span>
+      <span>Hexo 构建</span>
+      <span class="dot">·</span>
+      <a href="/rules/">规则书目录</a>
+    </p>
+  </div>
+</footer>
+
+  <div class="searchbox" data-search-panel hidden>
+  <div class="searchbox-backdrop" data-search-close></div>
+  <div class="searchbox-panel" role="dialog" aria-modal="true" aria-label="站内搜索">
+    <div class="searchbox-field">
+      <span class="searchbox-glyph" aria-hidden="true">⌕</span>
+      <input type="search" data-search-input placeholder="查一条规则、一个专长、一个名词…" autocomplete="off" spellcheck="false">
+      <button class="searchbox-hint" type="button" data-search-close>Esc</button>
+    </div>
+    <div class="searchbox-body" data-search-results>
+      <p class="searchbox-empty">输入关键词开始检索，支持多词，用空格分开。</p>
+    </div>
+    <div class="searchbox-foot">
+      <span><kbd>↑</kbd><kbd>↓</kbd> 选择</span>
+      <span><kbd>Enter</kbd> 打开</span>
+      <span class="searchbox-count" data-search-count></span>
+    </div>
+  </div>
+</div>
+
+  <script src="/js/site.js" defer></script>
+</body>
+</html>
