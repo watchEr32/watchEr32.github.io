@@ -329,6 +329,53 @@ kbd {
 .rail-sub a:hover { color: var(--accent); }
 .rail-foot { margin: 26px 0 10px; padding-top: 12px; border-top: 1px solid var(--line); font-size: 12.5px; }
 
+/* 逐级展开的目录树 */
+.rail-tree { margin: 10px 0 0; }
+.tree { list-style: none; margin: 0; padding: 0 0 0 13px; }
+.tree-root > .tree { padding-left: 2px; }
+.tree-item { margin: 0; line-height: 1.5; }
+.tree-branch > summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 3px 0;
+  position: relative;
+}
+.tree-branch > summary::-webkit-details-marker { display: none; }
+.tree-branch > summary::before {
+  content: "▸";
+  flex: none;
+  width: 10px;
+  font-size: 9px;
+  line-height: 1;
+  color: var(--muted);
+  transform: translateY(-1px);
+  transition: transform .12s ease;
+}
+.tree-branch[open] > summary::before { content: "▾"; }
+.tree-branch > summary:hover::before { color: var(--accent); }
+.tree-root > summary {
+  font-size: 11.5px;
+  letter-spacing: .12em;
+  color: var(--muted);
+  text-transform: none;
+  margin-top: 8px;
+}
+.tree-root > summary .tree-plain { color: var(--muted); }
+.tree-link, .tree-plain { color: var(--ink-2); }
+.tree-link:hover { color: var(--accent); }
+.tree-plain { color: var(--ink-2); }
+.tree-branch > summary > .tree-plain { color: var(--ink); }
+.tree-leaf { display: block; padding: 3px 0 3px 15px; }
+.tree-item.is-here > .tree-leaf,
+.tree-item.is-here > .tree-branch > summary > .tree-link {
+  color: var(--accent);
+  font-weight: 600;
+}
+.tree-item.is-here > .tree-leaf { background: var(--accent-soft); border-radius: 3px; }
+
 .doc-body { min-width: 0; padding-bottom: 40px; }
 
 .crumbs { font-size: 12.5px; color: var(--muted); margin-bottom: 14px; display: flex; flex-wrap: wrap; gap: 4px; align-items: baseline; }
