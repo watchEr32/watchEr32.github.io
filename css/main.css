@@ -629,6 +629,7 @@ a.row-name:hover { color: var(--accent); }
 
 /* -------------------------------------------------------- 文章 / 单页 */
 .page-head, .post-head { padding: 64px 0 26px; }
+
 .page-title, .post-title {
   font-family: var(--serif);
   font-size: clamp(27px, 3.6vw, 36px);
@@ -638,6 +639,30 @@ a.row-name:hover { color: var(--accent); }
 }
 .page-meta, .post-date { font-family: var(--mono); font-size: 12px; color: var(--muted); margin: 0; letter-spacing: .06em; }
 .post-tags { margin: 12px 0 0; display: flex; gap: 10px; }
+
+/* 支持页 */
+.support-lede { color: var(--ink-2); }
+.support-card {
+  margin: 26px 0 22px;
+  max-width: 296px;
+  padding: 0;
+}
+.support-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+.support-card figcaption {
+  margin: 10px 0 0;
+  font-size: 12.5px;
+  letter-spacing: .06em;
+  color: var(--muted);
+}
+.support-note { font-size: 13.5px; color: var(--muted); }
+
 
 .listing-head { padding: 64px 0 24px; border-bottom: 1px solid var(--line); }
 .listing-head h1 { font-family: var(--serif); font-size: 30px; margin: 0 0 6px; }
